@@ -2,4 +2,5 @@
 
 Desarrollo del proyecto.
 
-Proyecto del curso que busca crear un sistema de inventario
+Proyecto del curso que busca crear un sistema que permita gestionar inventarios en supermercados o comercios similares
+
