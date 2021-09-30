@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="" />
+	<link rel="stylesheet" href="styles/index.css" />
+
+	<title>Gestión Productos</title>
+</head>
+<body>
+	<header class="header">
+		<img  class="header-logo" src="INVENTARIO.JPG" style="width:400px;height:400px;">
+		<h1 class="header-titulo">Gestión Inventario</h1>
+	</header>
+	<section class="main">
+		<!-- MENÚ -->
+		<aside class="main-menu">
+			<nav>
+				<ul>
+					<li><a href="../index.html">PrincipalL</a></li>
+					<li><a href="index.html">index</a></li>
+				</ul>
+			</nav>
+		</aside>
+		<!-- FIN MENÚ -->
+		<div class="main-gestion-productos">
+			<tr>
+		</div>
+	</section>
+	<footer>
+	    <p>Diseñado por GRUPO MARRÓN 2021</p>
+	    <p><i>Todos los derechos reservados</i></p>
+	</footer>
+<script src="javascript/index.js"></script>
+</body>
+</html>
