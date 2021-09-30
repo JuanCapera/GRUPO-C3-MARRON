@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="" />
+	<link rel="stylesheet" href="styles/index.css" />
+
+	<title>Gestión Productos</title>
+</head>
+<body>
+	<header class="header">
+		<img  class="header-logo" src="" alt="">
+		<h1 class="header-titulo">Gestión Inventario</h1>
+	</header>
+	<section class="main">
+		<!-- MENÚ -->
+		<aside class="main-menu">
+			<nav>
+				<ul>
+					<li><a href="../index.html">PRINCIPAL</a></li>
+					<li><a href="gestionProductos.html">Gestión productos</a></li>
+				</ul>
+			</nav>
+		</aside>
+		<!-- FIN MENÚ -->
+		<div class="main-gestion-productos">
+			<div class="controles">
+				<div class="botones">
+					<button><a href="registrarCategoria.html">registrar categoria</a></button>
+					<button><a href="registrarProducto.html">Registrar Producto</a></button>
+				</div>
+				<div class="buscador">
+					<input type="text" placeholder="buscar">
+				</div>
+			</div>
+			<table class="tabla-productos" border >
+				<thead>
+					<tr>
+						<th>Nombre</th>
+						<th>Precio</th>
+						<th>Descripcion</th>
+						<th>Categoria</th>
+						<th>Stock</th>
+						<th></th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>articulo 1</td>
+						<td>1000</td>
+						<td>Descripcion producto</td>
+						<td>Categoria producto</td>
+                        <td>200</td>
+						<td><a href="#">Eliminar</a></td><!--Incluir la url para eliminar que recibirá el id-->
+						<td><a href="actualizarProducto.html">Actualizar</a></td>
+					</tr>
+					<tr>
+						<td>articulo 2</td>
+						<td>1000</td>
+						<td>Descripcion producto</td>
+						<td>Categoria producto</td>
+                        <td>200</td>
+						<td><a href="#">Eliminar</a></td><!--Incluir la url para eliminar que recibirá el id-->
+						<td><a href="actualizarProducto.html">Actualizar</a></td>
+					</tr>
+					<tr>
+						<td>articulo 3</td>
+						<td>1000</td>
+						<td>Descripcion producto</td>
+						<td>Categoria producto</td>
+                        <td>200</td>
+						<td><a href="#">Eliminar</a></td><!--Incluir la url para eliminar que recibirá el id-->
+						<td><a href="actualizarProducto.html">Actualizar</a></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</section>
+	<footer>
+	    <p>Diseñado por GRUPO MARRÓN 2021</p>
+	    <p><i>Todos los derechos reservados</i></p>
+	</footer>
+<script src="javascript/index.js"></script>
+</body>
+</html>
+
