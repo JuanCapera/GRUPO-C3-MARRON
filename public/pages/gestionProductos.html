@@ -4,81 +4,89 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name="description" content="" />
+	<!-- boostrap 5.1.1 -->
+	<link rel="stylesheet" href="../librerias/bootstrap-5.1.1/css/bootstrap.css" />
+	<!-- iconos bootstrap -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 	<link rel="stylesheet" href="../styles/index.css" />
 
 	<title>Gestión Productos</title>
+	<style>
+	</style>
 </head>
 <body>
-	<header class="header">
-		<img  class="header-logo" src="../imagenes/INVENTARIO.JPG" style="width:200px;height:200px;">
+	<header class="header  m-auto d-flex flex-column  justify-content-center align-items-center py-2 shadow">
+		<img  class="header-logo  " src="imagenes/INVENTARIO.JPG" style="width:100px;height:100px;">
 		<h1 class="header-titulo">Gestión Inventario</h1>
 	</header>
 	<section class="main">
-		<!-- MENÚ -->
-		<aside class="main-menu">
-			<nav>
-				<ul>
-					<li><a href="../index.html">PRINCIPAL</a></li>
-					<li><a href="gestionProductos.html">GESTIÓN PRODUCTOS</a></li>
-				</ul>
-			</nav>
-		</aside>
-		<!-- FIN MENÚ -->
-		<div class="main-gestion-productos">
-			<div class="controles">
-				<div class="botones">
-					<button><a href="registrarCategoria.html">registrar categoria</a></button>
-					<button><a href="registrarProducto.html">Registrar Producto</a></button>
+		<div class="row col-12" style="height: 450px">
+			<!-- MENÚ -->
+			<aside class="main-menu col-3">
+				<nav  class="w-100 py-4">
+					<ul class="">
+						<li class=""><a class="" href="../index.html"><i class="bi bi-house mx-2"></i>PRINCIPAL</a></li>
+						<li class=""><a class="" href="gestionProductos.html"><i class="bi bi-cart4 mx-2"></i>GESTIÓN PRODUCTOS</a></li>
+					</ul>
+				</nav>
+			</aside>
+			<!-- FIN MENÚ -->
+			<div class="main-principal d-flex  flex-column  col-9 position-relative overflow-hidden py-3" >
+				<div class="controles d-flex justify-content-between py-3 ">
+					<div class="botones">
+						<a class="btn btn-primary" href="registrarCategoria.html"><i class="bi bi-plus-square mx-2"></i>Registrar Categoria</a>
+						<a class="btn btn-outline-primary" href="registrarProducto.html"><i class="bi bi-plus-square mx-2"></i>Registrar Producto</a>
+					</div>
+					<div class="buscador">
+						<input class="form-control"type="text" placeholder="buscar">
+					</div>
 				</div>
-				<div class="buscador">
-					<input type="text" placeholder="buscar">
-				</div>
+				<table class="tabla-productos table " >
+					<thead>
+						<tr>
+							<th>NOMBRE</th>
+							<th>PRECIO</th>
+							<th>DESCRIPCION</th>
+							<th>CATEGORIA</th>
+							<th>STOCK</th>
+							<th></th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>articulo 1</td>
+							<td>1000</td>
+							<td>Descripcion producto</td>
+							<td>Categoria producto</td>
+							<td>200</td>
+							<td><a class="text-danger" href="#"><i class="bi bi-trash"></i></a></td><!--Incluir la url para eliminar que recibirá el id-->
+							<td><a href="actualizarProducto.html"><i class="bi bi-arrow-repeat"></i></a></td>
+						</tr>
+						<tr>
+							<td>articulo 2</td>
+							<td>1000</td>
+							<td>Descripcion producto</td>
+							<td>Categoria producto</td>
+							<td>200</td>
+							<td><a class="text-danger" href="#"><i class="bi bi-trash"></i></a></td><!--Incluir la url para eliminar que recibirá el id-->
+							<td><a href="actualizarProducto.html"><i class="bi bi-arrow-repeat"></i></a></td>
+						</tr>
+						<tr>
+							<td>articulo 3</td>
+							<td>1000</td>
+							<td>Descripcion producto</td>
+							<td>Categoria producto</td>
+							<td>200</td>
+							<td><a class="text-danger" href="#"><i class="bi bi-trash"></i></a></td><!--Incluir la url para eliminar que recibirá el id-->
+							<td><a href="actualizarProducto.html"><i class="bi bi-arrow-repeat"></i></a></td>
+						</tr>
+					</tbody>
+				</table>
 			</div>
-			<table class="tabla-productos" border >
-				<thead>
-					<tr>
-						<th>NOMBRE</th>
-						<th>PRECIO</th>
-						<th>DESCRIPCION</th>
-						<th>CATEGORIA</th>
-						<th>STOCK</th>
-						<th></th>
-						<th></th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>articulo 1</td>
-						<td>1000</td>
-						<td>Descripcion producto</td>
-						<td>Categoria producto</td>
-                        <td>200</td>
-						<td><a href="#">ELIMINAR</a></td><!--Incluir la url para eliminar que recibirá el id-->
-						<td><a href="actualizarProducto.html">Actualizar</a></td>
-					</tr>
-					<tr>
-						<td>articulo 2</td>
-						<td>1000</td>
-						<td>Descripcion producto</td>
-						<td>Categoria producto</td>
-                        <td>200</td>
-						<td><a href="#">ELIMINAR</a></td><!--Incluir la url para eliminar que recibirá el id-->
-						<td><a href="actualizarProducto.html">Actualizar</a></td>
-					</tr>
-					<tr>
-						<td>articulo 3</td>
-						<td>1000</td>
-						<td>Descripcion producto</td>
-						<td>Categoria producto</td>
-                        <td>200</td>
-						<td><a href="#">ELIMINAR</a></td><!--Incluir la url para eliminar que recibirá el id-->
-						<td><a href="actualizarProducto.html">Actualizar</a></td>
-					</tr>
-				</tbody>
-			</table>
 		</div>
 	</section>
-	<footer>
+	<footer class="d-flex flex-column align-items-center py-3 border-top ">
 	    <p>Diseñado por GRUPO MARRÓN 2021</p>
 	    <p><i>Todos los derechos reservados</i></p>
 	</footer>
