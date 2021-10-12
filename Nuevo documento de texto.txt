@@ -1,0 +1,6 @@
+git status: para ver los archivos como estan en el momento (modificado y no modificado)
+git diff: la diferencia (el antes y el despues de lo que modifique)
+git add . :agregar archivos
+git commit  -m "se agrega la carpeta imagenes y da imagenes" (la descripcion de lo que se hizo) 
+git push: para mandar los cambios al repositorio remoto.
+git pull: para traer lo que halla alla.
