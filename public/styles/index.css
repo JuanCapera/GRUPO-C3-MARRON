@@ -3,6 +3,30 @@
 	padding: 0;
 }
 
+.header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.header .header-logo{
+	width: 80px; 
+	height: 80px; 
+	border-radius: 50%;
+	object-fit: cover;
+
+}
+.header .header-titulo{
+	display: flex;
+}
+.main-principal h2{
+	color: #fff;
+	font-size: 2.5rem;
+	width: 100%;
+	text-align: center;
+	padding-top: 7rem;  
+
+}
 .main-menu{
 	background-image: url('../imagenes/control-inventario.jpg');
 	background-repeat: no-repeat;
