@@ -36,7 +36,6 @@ $("#registrarProducto").on('click', function (e) {
 		'descripcion': form['descripcion'].value,
 		'cantidad': form['cantidad'].value,
 		'idCategoria': {
-			// 'id' : parseInt(form['categoria'].value)
 			'id' : form['categoria'].value
 		},
 	}
