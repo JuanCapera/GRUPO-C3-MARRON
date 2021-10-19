@@ -35,7 +35,7 @@
 				<div class="controles d-flex justify-content-between py-3 ">
 					<div class="botones">
 						<a class="btn btn-danger" href="crearCategoria.html"><i class="bi bi-plus-square mx-2"></i>Registrar Categoria</a>
-						<a class="btn btn-outline-danger" href="registrarProducto.html"><i class="bi bi-plus-square mx-2"></i>Registrar Producto</a>
+						<a class="btn btn-outline-danger" href="registrarProducto.html" id="registrarProductoBtn"><i class="bi bi-plus-square mx-2"></i>Registrar Producto</a>
 					</div>
 					<div class="buscador">
 						<input class="form-control"type="text" placeholder="buscar">
@@ -43,50 +43,17 @@
 				</div>
 				<table class="tabla-productos table " >
 					<thead>
-			<!-- aqui puse categoria -->
-						<th>CATEGORIA</th>
-						
-						<dr>
-							<tr>
-								<th>NOMBRE</th>
-								<th>PRECIO</th>
-								<th>DESCRIPCION</th>
-								<th>CATEGORIA</th>
-								<th>STOCK</th>
-								<th></th>
-								<th></th>
-							</tr>	
-						</dr>
-						
+						<tr>
+							<th>NOMBRE</th>
+							<th>PRECIO</th>
+							<th>DESCRIPCION</th>
+							<th>CATEGORIA</th>
+							<th>STOCK</th>
+							<th></th>
+							<th></th>
+						</tr>	
 					</thead>
-					<tbody>
-						<tr>
-							<td>articulo 1</td>
-							<td>1000</td>
-							<td>Descripcion producto</td>
-							<td>Categoria producto</td>
-							<td>200</td>
-							<td><a class="text-danger" href="#"><i class="bi bi-trash"></i></a></td><!--Incluir la url para eliminar que recibirá el id-->
-							<td><a href="actualizarProducto.html"><i class="bi bi-arrow-repeat"></i></a></td>
-						</tr>
-						<tr>
-							<td>articulo 2</td>
-							<td>1000</td>
-							<td>Descripcion producto</td>
-							<td>Categoria producto</td>
-							<td>200</td>
-							<td><a class="text-danger" href="#"><i class="bi bi-trash"></i></a></td><!--Incluir la url para eliminar que recibirá el id-->
-							<td><a href="actualizarProducto.html"><i class="bi bi-arrow-repeat"></i></a></td>
-						</tr>
-						<tr>
-							<td>articulo 3</td>
-							<td>1000</td>
-							<td>Descripcion producto</td>
-							<td>Categoria producto</td>
-							<td>200</td>
-							<td><a class="text-danger" href="#"><i class="bi bi-trash"></i></a></td><!--Incluir la url para eliminar que recibirá el id-->
-							<td><a href="actualizarProducto.html"><i class="bi bi-arrow-repeat"></i></a></td>
-						</tr>
+					<tbody id="tablaDatos">
 					</tbody>
 				</table>
 			</div>
@@ -96,7 +63,10 @@
 	    <p>Diseñado por GRUPO MARRÓN 2021</p>
 	    <p><i>Todos los derechos reservados</i></p>
 	</footer>
+<!-- jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="../javascript/index.js"></script>
+<script src="../javascript/producto.js"></script>
 </body>
 </html>
 

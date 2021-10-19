@@ -45,14 +45,10 @@
 					<input class="form-control" type="number" id="cantidad" placeholder="cantidad de producto a registrar">
 
 					<label for="categoria">Categoria:</label>
-					<select class="form-control"id="categoria" name="categoria">
-						<option value="">...Seleccione una</option>
-						<option value="categoria_1">categoria 1</option>
-						<option value="categoria_2">categoria 1</option>
-						<option value="categoria_3">categoria 1</option>
+					<select class="form-control" id="categoriaSelect" name="categoria">
 					</select>
 					<div class="w-100 d-flex justify-content-center my-3">
-						<button class="bg-dark text-white btn btn-primary mx-2">
+						<button class="bg-dark text-white btn btn-primary mx-2" id="registrarProducto">
 							<i class="bi bi-plus-square mx-1"></i>
 							registrar producto
 						</button>
@@ -67,7 +63,11 @@
 	    <p>Diseñado por GRUPO MARRÓN 2021</p>
 	    <p><i>Todos los derechos reservados</i></p>
 	</footer>
+<!-- jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="../javascript/index.js"></script>
+<script src="../javascript/producto.js"></script>
+<script src="../javascript/categoria.js"></script>
 </body>
 </html>
 

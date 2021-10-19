@@ -32,6 +32,9 @@
 			<div class="main-principal d-flex  flex-column  col-9 position-relative overflow-hidden py-3" >
 				<h3 class="m-auto"><i class="bi bi-cart-plus mx-3"></i>Actualizar Producto</h3>
 				<form class="form col-8 m-auto" action="" id="actualizarProductoForm">
+
+					<input type="hidden" id="idProducto" name="idProducto">
+
 					<label for="nombre">Nombre:</label>
 					<input class="form-control" type="text" id="nombre" placeholder="nombre de producto a actualizar">
 
@@ -45,14 +48,15 @@
 
 
 					<label for="categoria">categoria:</label>
-					<input class="form-control" type="text" id="categoria" placeholder="categoria de producto a actualizar">
+					<select class="form-control" id="categoriaSelectUpdate" name="categoria">
+					</select>
 
 
 					<label for="cantidad">Cantidad:</label>
 					<input class="form-control" type="number" id="cantidad" placeholder="cantidad de producto a actualizar">
 
 					<div class="w-100 d-flex justify-content-center my-3">
-						<button class="bg-dark text-white btn btn-primary mx-2">
+						<button class="bg-dark text-white btn btn-primary mx-2" id="actualizarProductoBtn">
 							<i class="bi bi-plus-square mx-1"></i>
 							Actualizar producto
 						</button>
@@ -67,6 +71,10 @@
 	    <p>Diseñado por GRUPO MARRÓN 2021</p>
 	    <p><i>Todos los derechos reservados</i></p>
 	</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="../javascript/index.js"></script>
+<script src="../javascript/producto.js"></script>
+<script src="../javascript/categoria.js"></script>
+<script src="../javascript/productoUpdate.js"></script>
 </body>
 </html>
