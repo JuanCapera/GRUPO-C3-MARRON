@@ -73,7 +73,7 @@ $("#actualizarProductoBtn").on('click', function (e) {
         }
     }).done(function (res) {
 		alert('Se ha actualizado el producto ' + res.nombre + " exitosamente")
-        window.location.href = "file:///home/edcas/GRUPO-C3-MARRON/public/pages/gestionProductos.html"
+		window.location.href = path +  "/public/pages/gestionProductos.html"
         loadtable();
 	}).fail(function(err){
 		console.log(err.responseJSON.error);
